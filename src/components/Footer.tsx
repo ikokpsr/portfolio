@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 import { FaGithub, FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { siteConfig } from "@/lib/data";
+import { span } from "framer-motion/client";
 
 export default function Footer() {
   const socialLinks = [
