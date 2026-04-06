@@ -1,10 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 import { FaGithub, FaLinkedinIn, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { siteConfig } from "@/lib/data";
-import { span } from "framer-motion/client";
 
 export default function Footer() {
   const socialLinks = [
@@ -37,7 +35,6 @@ export default function Footer() {
           {/* Built with love */}
           <div className="flex items-center gap-1.5 text-sm text-[var(--muted-foreground)]">
             <span>Built with</span>
-            <Heart size={14} className="text-red-500 fill-red-500" />
             <span>using Next.js & Tailwind CSS</span>
           </div>
 
