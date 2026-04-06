@@ -34,11 +34,11 @@ export default function Footer() {
           </div>
 
           {/* Built with love */}
-          {/* <div className="flex items-center gap-1.5 text-sm text-[var(--muted-foreground)]">
+          <div className="flex items-center gap-1.5 text-sm text-[var(--muted-foreground)]">
             <span>Built with</span>
             <Heart size={14} className="text-red-500 fill-red-500" />
             <span>using Next.js & Tailwind CSS</span>
-          </div> */}
+          </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-3">

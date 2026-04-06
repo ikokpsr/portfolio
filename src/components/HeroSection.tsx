@@ -15,8 +15,8 @@ export default function HeroSection() {
 
   const socialLinks = [
     { icon: FaGithub, href: siteConfig.social.github, label: "GitHub" },
-    // { icon: FaLinkedinIn, href: siteConfig.social.linkedin, label: "LinkedIn" },
-    // { icon: FaXTwitter, href: siteConfig.social.twitter, label: "Twitter/X" },
+    { icon: FaLinkedinIn, href: siteConfig.social.linkedin, label: "LinkedIn" },
+    { icon: FaXTwitter, href: siteConfig.social.twitter, label: "Twitter/X" },
     { icon: FaInstagram, href: siteConfig.social.instagram, label: "Instagram" },
   ];
 
