@@ -78,12 +78,14 @@ export default function Navbar() {
                 >
                   {activeSection === link.href.replace("#", "") && (
                     <motion.span
-                      layoutId="activeSection"
-                      className="absolute inset-0 rounded-lg gradient-bg opacity-10"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      aria-hidden="true"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      className="absolute inset-0 rounded-lg gradient-bg opacity-10 pointer-events-none -z-10"
+                      transition={{ duration: 0.25 }}
                     />
                   )}
-                  {link.name}
+                  <span className="relative z-10">{link.name}</span>
                 </button>
               ))}
             </div>
@@ -98,9 +100,9 @@ export default function Navbar() {
                 aria-label="Toggle theme"
               >
                 {theme === "dark" ? (
-                  <Sun size={18} className="text-yellow-400" />
+                  <Sun size={18} className="text-[var(--accent-hover)]" />
                 ) : (
-                  <Moon size={18} className="text-indigo-600" />
+                  <Moon size={18} className="text-[var(--accent-end)]" />
                 )}
               </motion.button>
 

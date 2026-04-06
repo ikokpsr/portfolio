@@ -12,6 +12,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        card: "var(--card)",
+        muted: "var(--muted)",
+        "amber-smoke": "var(--accent-start)",
+        "blue-mirage": "var(--accent-end)",
+        accent: "var(--accent-start)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "Inter", "system-ui", "sans-serif"],
@@ -37,8 +42,8 @@ const config: Config = {
           "50%": { transform: "translateY(-20px)" },
         },
         glow: {
-          "0%": { boxShadow: "0 0 20px rgba(99, 102, 241, 0.3)" },
-          "100%": { boxShadow: "0 0 40px rgba(139, 92, 246, 0.5)" },
+          "0%": { boxShadow: "0 0 20px var(--accent-start)" },
+          "100%": { boxShadow: "0 0 40px var(--accent-end)" },
         },
       },
     },

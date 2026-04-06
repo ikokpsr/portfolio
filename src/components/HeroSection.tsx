@@ -92,7 +92,7 @@ export default function HeroSection() {
           className="flex flex-wrap items-center justify-center gap-4 mb-12"
         >
           <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px -15px rgba(99, 102, 241, 0.4)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px -15px rgba(78, 123, 183, 0.4)" }}
             whileTap={{ scale: 0.95 }}
             onClick={() => handleScroll("#contact")}
             className="gradient-bg text-white px-8 py-3.5 rounded-xl font-semibold text-sm flex items-center gap-2 shadow-lg cursor-pointer"
